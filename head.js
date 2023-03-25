@@ -1,20 +1,22 @@
 // output: first element of the array
 // output: undefined if the array is empty
+//
 
-let head = function (array) {
+let head = function(array) {
   let num = array[0];
-  if(array.length > 0) {
-  console.log(num);
-  return num;
-} else {
-  console.log(undefined);
-  return undefined; 
-}
+  if (array.length > 0) {
+    console.log(num);
+    return num;
+  } else {
+    console.log(undefined);
+    return undefined;
+  }
 };
 
 const assertEqual = function(actual, expected) {
 
   let assertion = '';
+  
   
   if (actual === expected) {
     assertion = `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
