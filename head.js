@@ -13,6 +13,8 @@ let head = function(array) {
   }
 };
 
+//
+
 const assertEqual = function(actual, expected) {
 
   let assertion = '';
