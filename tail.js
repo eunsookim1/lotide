@@ -15,6 +15,18 @@ const tail = function(array) {
 };
 
 
+/*
+const tail2 = function(array) {
+  let tailedArray = [];
+  for (let i = 1; i < array.length; i++) {
+    tailedArray.push(array[i]);
+  }
+  console.log(tailedArray);
+  return tailedArray;
+};
+
+*/
+
 
 const assertEqual = function(actual, expected) {
 
