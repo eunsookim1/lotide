@@ -15,13 +15,15 @@ const assertEqual = function(actual, expected) {
   
 };
 
-
 // Implement a function eqArrays
 // Input: takes two arrays
 // Output: returns true or false, based on perfect match.
 
-let eqArrays = function (array1, array2) {
-
+let eqArrays = function(array1, array2) {
+  if (array1.length !== array2.length) {
+    return false;
+  }
+  
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
       return false;
@@ -29,11 +31,6 @@ let eqArrays = function (array1, array2) {
   }
   return true;
 };
-
-
-
-
-
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp"); // 🛑🛑🛑 Assertion Failed:
