@@ -20,11 +20,7 @@ const assertEqual = function(actual, expected) {
   
 };
 
-let eqArrays = function(array1, array2) {
-  if (array1 === array2) {
-    return true;
-  }
-};
+
 
 
 // allItems: an array of strings that we need to look through
@@ -67,7 +63,7 @@ const firstNames = [
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
 
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+assertEqual(result1["Jason"], 1); // 1 === 1
+assertEqual(result1["Karima"], undefined); // no Karima thus undefined from obj
+assertEqual(result1["Fang"], 2); // Fang appeared twice thus 2 === 2
+assertEqual(result1["Agouhanna"], undefined); // not counting Agouhanna thus undefined === undefined 
