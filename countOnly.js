@@ -34,6 +34,7 @@ const countOnly = function(allItems, itemsToCount) {
     // increment the counter for each item:
     // set a property with tht string key to:
     // the value that was already there (or zero if nothing there) with 1 added to it.
+    
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
@@ -66,4 +67,4 @@ const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": t
 assertEqual(result1["Jason"], 1); // 1 === 1
 assertEqual(result1["Karima"], undefined); // no Karima thus undefined from obj
 assertEqual(result1["Fang"], 2); // Fang appeared twice thus 2 === 2
-assertEqual(result1["Agouhanna"], undefined); // not counting Agouhanna thus undefined === undefined 
+assertEqual(result1["Agouhanna"], undefined); // not counting Agouhanna thus undefined === undefined
