@@ -1,7 +1,3 @@
-// Implement a function eqArrays
-// Input: takes two arrays
-// Output: returns true or false, based on perfect match.
-
 let eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     console.log(false);
@@ -19,3 +15,8 @@ let eqArrays = function(array1, array2) {
 };
 
 module.exports = eqArrays;
+
+// Implement a function eqArrays
+// Input: takes two arrays
+// Output: returns true or false, based on perfect match.
+
