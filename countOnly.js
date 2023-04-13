@@ -38,12 +38,13 @@ const countOnly = function(allItems, itemsToCount) {
     if (itemsToCount[item]) {
       if (results[item]) {
         results[item] += 1;
+        console.log("B", results[item]);
       } else {
         results[item] = 1;
       }
   
     }
-    console.log(item);
+    console.log("A", results[item]);
   }
   return results;
 };

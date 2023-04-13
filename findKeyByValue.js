@@ -28,7 +28,8 @@ const assertEqual = function(actual, expected) {
 // Generally, we use for...of loops for Arrays, Strings
 // for...in loops for looping through Objects
 
-const findKeyByValue = function(shows, showValue) {
+const findKeyByValue = function(shows, showValue) 
+{
 
   for (let show in shows) {
     if (shows[show] === showValue) {
