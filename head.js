@@ -1,11 +1,3 @@
-// output: first element of the array
-// output: undefined if the array is empty
-
-const {assertEqual} = require('./assertEqual');
-const importedFunctions = require('./assertEqual');
-const assertEqual1 = importedFunctions.assertEqual;
-
-
 let head = function(array) {
   let num = array[0];
   if (array.length > 0) {
@@ -15,3 +7,11 @@ let head = function(array) {
 };
 
 module.exports = head;
+
+
+// output: first element of the array
+// output: undefined if the array is empty
+
+// const {assertEqual} = require('./assertEqual');
+// const importedFunctions = require('./assertEqual');
+// const assertEqual1 = importedFunctions.assertEqual;
