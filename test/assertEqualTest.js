@@ -1,8 +1,5 @@
-const {assertEqual, eqArrays} = require('../assertEqual');
-
-const importedFunctions = require('../assertEqual');
-const assertEqual1 = importedFunctions.assertEqual;
-const eqArrays1 = importedFunctions.eqArrays;
+const assertEqual = require('../assertEqual');
+const eqArrays = require('../eqArrays');
 
 // TEST CODE
 assertEqual("Lighthouse Labs", "Bootcamp"); // 🛑🛑🛑 Assertion Failed:
@@ -16,4 +13,4 @@ eqArrays(["1", "2", "3"], ["1", "2", 3]); // => false
 
 
 
-assertEqual1(eqArrays1([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
