@@ -7,7 +7,7 @@
 
 const letterPositions = function(string) {
   const results = {};
-  const characters = string.split(""); 
+  const characters = string.split("");
   for (let i = 0; i < characters.length; i++) {
     if (characters[i] !== " ") {
       if (results[characters[i]]) { // if character exists
