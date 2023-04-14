@@ -1,34 +1,3 @@
-
-let eqArrays = function(array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(array1, array2) {
-  
-  let result = eqArrays(array1, array2);
-  if (result) {
-    
-    // result === true, some values will considered true. result is a boolean, considered true.
-
-    console.log(`✅✅✅ Assertion Passed: ${array1} === ${array2}`);
-     
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
-    
-  }
-};
-
-
-
 // Input:
 // An array to map
 // A callback function
@@ -95,7 +64,9 @@ const map = function(array, callback) {
 };
 
 const results1 = map(words, word => word[0]);
-console.log(results1);
 
+module.exports = results1;
+module.exports = map;
 
-assertArraysEqual(results1, [ 'm', 'd', 's', 'd', 'g' ]);
+// console.log(results1);
+// assertArraysEqual(results1, [ 'm', 'd', 's', 'd', 'g' ]);
