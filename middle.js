@@ -14,7 +14,6 @@ const middle = function(array) {
     const mid = array.length / 2;
     result.push(array[mid - 1], array[mid]);
   }
-  console.log(result);
   return result;
 };
 
