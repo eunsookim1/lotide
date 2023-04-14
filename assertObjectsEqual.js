@@ -40,6 +40,10 @@ let eqObjects = function(obj1, obj2) {
   return true;
 };
 
+module.exports = assertObjectsEqual;
+module.exports = eqObjects;
+
+
 // Input: Take two objects
 // Output: console.log an appropriate message
 
@@ -71,13 +75,11 @@ const anotherMultiColorShirtObject = {
   colors: ["red", "orange"]
 };
 
-assertObjectsEqual(shirtObject, anotherShirtObject);
-
-assertObjectsEqual(shirtObject, longSleeveShirtObject);
-
-
 
 // Test Codes:
+// assertObjectsEqual(shirtObject, anotherShirtObject);
+// assertObjectsEqual(shirtObject, longSleeveShirtObject);
+
 // (eqObjects(shirtObject , anotherShirtObject)); // => true
 // assertEquals(eqObjects(shirtObject , anotherShirtObject), true);
 
