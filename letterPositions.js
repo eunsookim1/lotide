@@ -43,7 +43,7 @@ const positions = {
 // Test Code:
 
 const result = letterPositions("lighthouse in the house");
-
+module.exports = result;
 // changing to primitive values for assertEquals function
 
 // assertEqual(result["l"].length, 1); // => should PASS
