@@ -1,60 +1,3 @@
-// Input:
-// An array to map
-// A callback function
-
-
-const words = ['mom', 'dad', 'son', 'daugther', 'gradma'];
-
-
-/*
-const results1 = words.map(words, word => word[0]);
-console.log(results1);
-
-
-const map = function() {
-  const results = [];
-  return results;
-};
-
-console.log(map());
-
-
-
-/*
-const map = function(array, callback) {
-  console.log('array: ', array);
-  console.log('callback: ', callback);
-
-  const results = [];
-  // array.forEach((word) => {
-
-  //   const resultWord = callback(word);
-
-  //   results.push(resultWord);
-  // });
-  
-  return results;
-
-  /*
-    console.log('item BEFORE: ', item);
-    console.log('item AFTER: ', callback(item));
-    console.log('---');
-  }
-};
-  */
-
-/*
-const map = function(array, callback) {
-  const results = [];
-  for (let item of array) {
-    console.log('item BEFORE: ', item);
-    console.log('item AFTER: ', callback(item));
-    console.log('---');
-  }
-  return results;
-};
-*/
-
 const map = function(array, callback) {
   const results = [];
   for (let item of array) {
@@ -63,10 +6,7 @@ const map = function(array, callback) {
   return results;
 };
 
-const results1 = map(words, word => word[0]);
+// EXAMPLE :
+// results1 = map(words, word => word[0]); returns the first letter of each word in an array.
 
-module.exports = results1;
 module.exports = map;
-
-// console.log(results1);
-// assertArraysEqual(results1, [ 'm', 'd', 's', 'd', 'g' ]);
